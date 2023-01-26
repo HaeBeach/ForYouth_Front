@@ -34,6 +34,7 @@ export default {
 </script>
 <style scoped>
   #background {
+    margin: auto;
     width: 1440px;
     height: 72px;
     align-items: center;
@@ -85,7 +86,7 @@ export default {
 
   @media (max-width: 1440px) {
     #background {
-      margin: 0 auto;
+      margin: auto;
       width: 100%;
       min-height: 0;
       padding-top: 0;
