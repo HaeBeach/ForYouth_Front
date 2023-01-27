@@ -6,15 +6,15 @@
     </div>
 
     <div id="menu">
-      <div class="menuButton">
+      <a class="menuButton">
         부동산
-      </div>
-      <div class="menuButton">
+      </a>
+      <a class="menuButton">
         취업
-      </div>
-      <div class="menuButton">
+      </a>
+      <a class="menuButton">
         게시판
-      </div>
+      </a>
     </div>
 
     <div id="profileImage">
@@ -70,7 +70,7 @@ export default {
     float: right;
   }
 
-  div.menuButton {
+  a.menuButton {
     width: 150px;
     margin-top: 2px;
     text-align: center;
