@@ -1,18 +1,18 @@
 <template>
   <div id="background">
 
-    <div id="logo">
+    <a id="logo" href="http://localhost:8080">
       <img alt="logo" src="../assets/ForYouthlogo.png">
-    </div>
+    </a>
 
     <div id="menu">
-      <a class="menuButton">
+      <a class="menuButton" href="http://localhost:8080/realty">
         부동산
       </a>
-      <a class="menuButton">
+      <a class="menuButton" href="http://localhost:8080/job">
         취업
       </a>
-      <a class="menuButton">
+      <a class="menuButton" href="http://localhost:8080/board">
         게시판
       </a>
     </div>
@@ -77,6 +77,7 @@ export default {
     color: #FFFFFF;
     font-size: 24px;
     float: left;
+    text-decoration: none;
   }
   img.profileImage {
     width: 32px;
