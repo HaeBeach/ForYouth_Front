@@ -1,21 +1,14 @@
 <template>
-    <div id="background">
-        <div id="title">
-            부동산
-        </div>
-        <a id="menu">
-            LH청약정보
-        </a>
-        <a id="menu">
-            SH청약정보
-        </a>
-        <a id="menu">
-            GH청약정보
-        </a>
+  <div id="background">
+    <div id="title">
+      자유게시판
     </div>
+  </div>
 </template>
 <script>
-
+export default {
+  name: 'BoardSidebar'
+}
 </script>
 <style scoped>
   #background {
@@ -47,5 +40,6 @@
     display: flex;
     flex-direction: row-reverse;
     align-items: center;
+    text-decoration: none;
   }
 </style>

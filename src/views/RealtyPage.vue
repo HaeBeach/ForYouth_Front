@@ -1,18 +1,19 @@
 <template>
     <div id="sidebar">
-        <Sidebar/>
+        <RealtySidebar/>
     </div>
     <div>
-        RealtyPage
+        Realty Page
+        <router-view></router-view>
     </div>
 </template>
 <script>
-import Sidebar from '../components/SidebarCom.vue'
+import RealtySidebar from '../components/RealtySidebar.vue'
 
 export default {
   name: 'RealtyPage',
   components: {
-    Sidebar
+    RealtySidebar
   }
 }
 </script>

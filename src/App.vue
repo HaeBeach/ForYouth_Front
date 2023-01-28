@@ -1,20 +1,17 @@
 <template>
   <HeaderCom/>
-  <BodyCom/>
-  <!-- <div id="content" class="content">
+  <div id="content" class="content">
     <router-view></router-view>
-  </div> -->
+  </div>
 </template>
 
 <script>
 import HeaderCom from './components/HeaderCom.vue'
-import BodyCom from './components/BodyCom.vue'
 
 export default {
   name: 'App',
   components: {
-    HeaderCom,
-    BodyCom
+    HeaderCom
   }
 }
 </script>
@@ -22,6 +19,12 @@ export default {
 <style>
   body {
     margin: 0px;
+  }
+  #content {
+    margin: auto;
+    width: 1440px;
+    height: 100%;
+    margin-top: 10px;
   }
 /* #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;

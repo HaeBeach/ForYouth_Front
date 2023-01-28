@@ -1,18 +1,18 @@
 <template>
     <div id="sidebar">
-        <Sidebar/>
+        <BoardSidebar/>
     </div>
     <div>
         BoardPage
     </div>
 </template>
 <script>
-import Sidebar from '../components/SidebarCom.vue'
+import BoardSidebar from '../components/BoardSidebar.vue'
 
 export default {
   name: 'BoardPage',
   components: {
-    Sidebar
+    BoardSidebar
   }
 }
 </script>

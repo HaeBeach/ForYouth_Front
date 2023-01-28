@@ -1,18 +1,18 @@
 <template>
     <div id="sidebar">
-        <Sidebar/>
+        <JobSidebar/>
     </div>
     <div>
         JobPage
     </div>
 </template>
 <script>
-import Sidebar from '../components/SidebarCom.vue'
+import JobSidebar from '../components/JobSidebar.vue'
 
 export default {
   name: 'JobPage',
   components: {
-    Sidebar
+    JobSidebar
   }
 }
 </script>
