@@ -1,18 +1,18 @@
 <template>
   <div id="background">
 
-    <a id="logo" href="http://localhost:8080">
+    <a id="logo" href="/">
       <img alt="logo" src="../assets/ForYouthlogo.png">
     </a>
 
     <div id="menu">
-      <a class="menuButton" href="http://localhost:8080/realty">
+      <a class="menuButton" href="/realty">
         부동산
       </a>
-      <a class="menuButton" href="http://localhost:8080/job">
+      <a class="menuButton" href="/job">
         취업
       </a>
-      <a class="menuButton" href="http://localhost:8080/board">
+      <a class="menuButton" href="/board">
         게시판
       </a>
     </div>
@@ -85,7 +85,7 @@ export default {
     border-radius: 100%;
   }
 
-  @media (max-width: 1440px) {
+  /* @media (max-width: 1440px) {
     #background {
       margin: auto;
       width: 100%;
@@ -93,5 +93,5 @@ export default {
       padding-top: 0;
       position: relative;
     }
-  }
+  } */
 </style>

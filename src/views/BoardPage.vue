@@ -3,14 +3,14 @@
         <Sidebar/>
     </div>
     <div>
-        RealtyPage
+        BoardPage
     </div>
 </template>
 <script>
 import Sidebar from '../components/SidebarCom.vue'
 
 export default {
-  name: 'RealtyPage',
+  name: 'BoardPage',
   components: {
     Sidebar
   }

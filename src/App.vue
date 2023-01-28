@@ -1,18 +1,20 @@
 <template>
   <HeaderCom/>
-  <div id="content" class="content">
+  <BodyCom/>
+  <!-- <div id="content" class="content">
     <router-view></router-view>
-  </div>
+  </div> -->
 </template>
 
 <script>
-import HeaderCom from './components/Header.vue'
+import HeaderCom from './components/HeaderCom.vue'
+import BodyCom from './components/BodyCom.vue'
 
 export default {
   name: 'App',
   components: {
-    // HelloWorld,
-    HeaderCom
+    HeaderCom,
+    BodyCom
   }
 }
 </script>
