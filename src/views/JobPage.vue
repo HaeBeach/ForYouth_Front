@@ -2,8 +2,9 @@
     <div id="sidebar">
         <JobSidebar/>
     </div>
-    <div>
+    <div id="body">
         JobPage
+        <router-view></router-view>
     </div>
 </template>
 <script>
@@ -18,6 +19,11 @@ export default {
 </script>
 <style>
     #sidebar {
+        float: left;
+    }
+    #body {
+        padding-left: 10px;
+        margin-top: 10px;
         float: left;
     }
 </style>

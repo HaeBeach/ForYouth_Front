@@ -5,10 +5,12 @@ import Realty from '../views/RealtyPage.vue'
 import Job from '../views/JobPage.vue'
 import Board from '../views/BoardPage.vue'
 
-import RealtyMainBody from '../body/RealtyMainBody.vue'
-import LHBody from '../body/LHBody.vue'
-import SHBody from '../body/SHBody.vue'
-import GHBody from '../body/GHBody.vue'
+import RealtyMainBody from '../body/realty/RealtyMainBody.vue'
+import JobMainBody from '../body/job/JobMainBody.vue'
+import LHBody from '../body/realty/LHBody.vue'
+import SHBody from '../body/realty/SHBody.vue'
+import GHBody from '../body/realty/GHBody.vue'
+import JobPostingBody from '../body/job/JobPostingBody.vue'
 
 const router = createRouter({
     history: createWebHistory(),
@@ -26,22 +28,32 @@ const router = createRouter({
                     component: RealtyMainBody
                 },
                 {
-                    path: "LH",
+                    path: "lh",
                     component: LHBody
                 },
                 {
-                    path: "SH",
+                    path: "sh",
                     component: SHBody
                 },
                 {
-                    path: "GH",
+                    path: "gh",
                     component: GHBody
                 }
             ]
         },
         {
             path: "/job",
-            component: Job
+            component: Job,
+            children: [
+                {
+                    path: "",
+                    component: JobMainBody
+                },
+                {
+                    path: "posting",
+                    component: JobPostingBody
+                }
+            ]
         },
         {
             path: "/board",

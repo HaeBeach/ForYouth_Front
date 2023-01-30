@@ -3,7 +3,7 @@
     <div id="title">
       취업
     </div>
-    <a id="menu">
+    <a id="menu" href="/job/posting">
       채용공고
     </a>
   </div>

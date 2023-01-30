@@ -2,7 +2,7 @@
     <div id="sidebar">
         <RealtySidebar/>
     </div>
-    <div>
+    <div id="body">
         Realty Page
         <router-view></router-view>
     </div>
@@ -19,6 +19,11 @@ export default {
 </script>
 <style>
     #sidebar {
+        float: left;
+    }
+    #body {
+        padding-left: 10px;
+        margin-top: 10px;
         float: left;
     }
 </style>

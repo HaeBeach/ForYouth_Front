@@ -3,13 +3,13 @@
         <div id="title">
             부동산
         </div>
-        <a id="menu" href="/realty/LH">
+        <a id="menu" href="/realty/lh">
             LH청약정보
         </a>
-        <a id="menu" href="/realty/SH">
+        <a id="menu" href="/realty/sh">
             SH청약정보
         </a>
-        <a id="menu" href="/realty/GH">
+        <a id="menu" href="/realty/gh">
             GH청약정보
         </a>
     </div>
