@@ -6,15 +6,21 @@
     </a>
 
     <div id="menu">
-      <a class="menuButton" href="/realty">
-        부동산
-      </a>
-      <a class="menuButton" href="/job">
-        취업
-      </a>
-      <a class="menuButton" href="/board">
-        게시판
-      </a>
+      <div id="menuButton">
+        <a href="/realty">
+          부동산
+        </a>
+      </div>
+      <div id="menuButton">
+        <a href="/job">
+          취업
+        </a>
+      </div>
+      <div id="menuButton">
+        <a href="/board">
+          게시판
+        </a>
+      </div>
     </div>
 
     <div id="profileImage">
@@ -69,14 +75,16 @@ export default {
     text-align: center;
     float: right;
   }
-
-  a.menuButton {
+  #menuButton {
     width: 150px;
     margin-top: 2px;
     text-align: center;
-    color: #FFFFFF;
     font-size: 24px;
     float: left;
+  }
+
+  a {
+    color: #FFFFFF;
     text-decoration: none;
   }
   img.profileImage {

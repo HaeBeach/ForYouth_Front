@@ -3,15 +3,21 @@
         <div id="title">
             부동산
         </div>
-        <a id="menu" href="/realty/lh">
+        <div id="menu">
+          <a href="/realty/lh">
             LH청약정보
-        </a>
-        <a id="menu" href="/realty/sh">
+          </a>
+        </div>
+        <div id="menu">
+          <a href="/realty/sh">
             SH청약정보
-        </a>
-        <a id="menu" href="/realty/gh">
+          </a>
+        </div>
+        <div id="menu">
+          <a href="/realty/gh">
             GH청약정보
-        </a>
+          </a>
+        </div>
     </div>
 </template>
 <script>
@@ -49,6 +55,9 @@ export default {
     display: flex;
     flex-direction: row-reverse;
     align-items: center;
+  }
+
+  a {
     text-decoration: none;
   }
 </style>

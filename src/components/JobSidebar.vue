@@ -3,9 +3,11 @@
     <div id="title">
       취업
     </div>
-    <a id="menu" href="/job/posting">
-      채용공고
-    </a>
+    <div id="menu">
+      <a href="/job/posting">
+        채용공고
+      </a>
+    </div>
   </div>
 </template>
 <script>
@@ -43,6 +45,9 @@ export default {
     display: flex;
     flex-direction: row-reverse;
     align-items: center;
+  }
+
+  a {
     text-decoration: none;
   }
 </style>
