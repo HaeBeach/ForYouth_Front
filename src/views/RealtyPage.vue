@@ -3,7 +3,6 @@
         <RealtySidebar/>
     </div>
     <div id="body">
-        Realty Page
         <router-view></router-view>
     </div>
 </template>
