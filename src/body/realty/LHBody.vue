@@ -85,12 +85,13 @@ export default {
             else if (currentPage > this.totalPageNumber)
                 return;
             const res = await axios.get(`http://${VUE_APP_BACK_SERVICE_HOST}:${VUE_APP_BACK_SERVICE_PORT}/realty/lh/pageSize/${this.pageSize}/pageNumber/${currentPage}`);
+            console.log(res);
             this.currentPage = currentPage;
-            this.totalPageNumber = (res.data.object[1].dsList[0].allCnt % this.pageSize > 0) ? parseInt(res.data.object[1].dsList[0].allCnt / this.pageSize) + 1 : parseInt(res.data.object[1].dsList[0].allCnt / this.pageSize);
+            this.totalPageNumber = (res.data.object[0].allCnt % this.pageSize > 0) ? parseInt(res.data.object[0].allCnt / this.pageSize) + 1 : parseInt(res.data.object[0].allCnt / this.pageSize);
             this.firstPageNumber = this.currentPage - ((this.currentPage - 1) % 10);
             this.lastPageNumber = (this.totalPageNumber >= this.firstPageNumber + 9) ? this.firstPageNumber + 9 : this.totalPageNumber;
             this.firstIndex = (this.currentPage - 1) * this.pageSize;
-            this.noticeList = res.data.object[1].dsList;            
+            this.noticeList = res.data.object;            
             
             console.log(res);
             console.log(this.noticeList);
