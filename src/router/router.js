@@ -4,6 +4,8 @@ import Home from '../views/HomePage.vue'
 import Realty from '../views/RealtyPage.vue'
 import Job from '../views/JobPage.vue'
 import Board from '../views/BoardPage.vue'
+import GoogleSigninPage from '../views/GoogleSigninPage.vue'
+import GoogleSignupPage from '../views/GoogleSignupPage.vue'
 
 import RealtyMainBody from '../body/realty/RealtyMainBody.vue'
 import JobMainBody from '../body/job/JobMainBody.vue'
@@ -58,6 +60,14 @@ const router = createRouter({
         {
             path: "/board",
             component: Board
+        },
+        {
+            path: "/google-signin",
+            component: GoogleSigninPage
+        },
+        {
+            path: "/google-signup",
+            component: GoogleSignupPage
         }
     ]
 });
